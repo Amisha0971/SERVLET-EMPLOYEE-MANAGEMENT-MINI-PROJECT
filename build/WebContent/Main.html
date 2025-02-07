@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            background-image: url('./images/blueBackground.jpeg'); /* Replace with the actual path to your image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed; /* Makes the background image fixed while scrolling */
+        }
+        .container {
+            width: 600px;
+            padding: 50px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .header {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button {
+            width: 48%;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        .button.new-employee {
+            background-color: #28a745;
+        }
+        .button.our-employees {
+            background-color: #007bff;
+        }
+        .button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><u>Choose the Field to Maintain Employees Records</u></div>
+        <div class="button-container">
+            <button class="button new-employee" onclick="location.href='AddNewEmployee.html'">New Employee</button>
+            <button class="button our-employees" onclick="location.href='OurEmployeesServlet'">Our Employees</button>
+        </div>
+    </div>
+</body>
+</html>
